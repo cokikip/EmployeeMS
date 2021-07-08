@@ -12,7 +12,7 @@
 
 eureka:
   instance:
-    hostname: afternoon-hollows-09801.herokuapp.com
+    hostname: openemployeefms.herokuapp.com
     non-secure-port: 80
     prefer-ip-address: false
 

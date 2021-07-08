@@ -45,7 +45,7 @@
     "languages": ["en", "fr"],
     "entities": ["Region", "Country", "Location", "Department", "Task", "Employee", "Job", "JobHistory"],
     "lastLiquibaseTimestamp": 1625727979000,
-    "herokuAppName": "afternoon-hollows-09801",
+    "herokuAppName": "openemployeefms",
     "herokuDeployType": "git",
     "herokuJavaVersion": "11"
   }
