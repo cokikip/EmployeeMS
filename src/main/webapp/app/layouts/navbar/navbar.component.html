@@ -1,8 +1,7 @@
 <nav data-cy="navbar" class="navbar navbar-dark navbar-expand-md bg-dark">
   <a class="navbar-brand logo" routerLink="/" (click)="collapseNavbar()">
     <span class="logo-img"></span>
-    <span class="navbar-title">Employee</span>
-    <span class="navbar-version">{{ version }}</span>
+    <span class="navbar-title">Employee FMS</span>
   </a>
   <a
     class="navbar-toggler d-lg-none"
@@ -18,7 +17,7 @@
   </a>
   <div class="navbar-collapse collapse" id="navbarResponsive" [ngbCollapse]="isNavbarCollapsed" [ngSwitch]="account !== null">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
         <a class="nav-link" routerLink="/" (click)="collapseNavbar()">
           <span>
             <fa-icon icon="home"></fa-icon>
@@ -26,25 +25,133 @@
           </span>
         </a>
       </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="region-app" (click)="collapseNavbar()">
+          <span>
+            <span>Region</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="country-app" (click)="collapseNavbar()">
+          <span>
+            <span>Country</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="location-app" (click)="collapseNavbar()">
+          <span>
+            <span>Location</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="department-app" (click)="collapseNavbar()">
+          <span>
+            <span>Department</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="task-app" (click)="collapseNavbar()">
+          <span>
+            <span>Task</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="job-history-app" (click)="collapseNavbar()">
+          <span>
+            <span>Job History</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="job-app" (click)="collapseNavbar()">
+          <span>
+            <span>Job</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item" *ngSwitchCase="true" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link" routerLink="employee-app" (click)="collapseNavbar()">
+          <span>
+            <span>Employee</span>
+          </span>
+        </a>
+      </li>
       <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
-      <li
-        *ngSwitchCase="true"
-        ngbDropdown
-        class="nav-item dropdown pointer"
-        display="dynamic"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-      >
-        <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu" data-cy="entity">
+      <!-- <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" display="dynamic" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu"
+          data-cy="entity">
           <span>
             <fa-icon icon="th-list"></fa-icon>
             <span>Entities</span>
           </span>
         </a>
         <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="entity-menu">
-          <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+          <li>
+            <a class="dropdown-item" routerLink="region-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Region</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="country-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Country</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="location-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Location</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="department-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Department</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="task-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Task</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="employee-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="job-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Job</span>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" routerLink="job-history-app" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" (click)="collapseNavbar()">
+              <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+              <span>Job History</span>
+            </a>
+          </li>
         </ul>
-      </li>
+      </li> -->
+      <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+
       <li
         *jhiHasAnyAuthority="'ROLE_ADMIN'"
         ngbDropdown
@@ -152,12 +259,13 @@
               <span>Sign in</span>
             </a>
           </li>
-          <li *ngSwitchCase="false">
-            <a class="dropdown-item" routerLink="account/register" routerLinkActive="active" (click)="collapseNavbar()" data-cy="register">
+          <!-- <li *ngSwitchCase="false">
+            <a class="dropdown-item" routerLink="account/register" routerLinkActive="active" (click)="collapseNavbar()"
+              data-cy="register">
               <fa-icon icon="user-plus" [fixedWidth]="true"></fa-icon>
               <span>Register</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </li>
     </ul>

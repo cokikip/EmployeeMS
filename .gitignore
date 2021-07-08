@@ -38,12 +38,15 @@ local.properties
 .loadpath
 .factorypath
 /src/main/resources/rebel.xml
+.jhipster
 
 # External tool builders
 .externalToolBuilders/**
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+
 
 # CDT-specific
 .cproject
