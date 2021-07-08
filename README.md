@@ -1,6 +1,7 @@
 
 <img src="https://github.com/cokikip/EmployeeMS/blob/1ead07a5a01d653010f7bceccf55a899b27c7e1e/employeeSystem.png" />
-# Employee
+
+# Employee Management System
 
 This application was generated using JHipster 7.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.1.0](https://www.jhipster.tech/documentation-archive/v7.1.0).
 
