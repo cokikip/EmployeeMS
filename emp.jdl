@@ -1,0 +1,64 @@
+entity Region {
+	regionName String
+}
+entity Country {
+	countryName String
+}
+entity Location {
+	streetAddress String
+	postalCode String 
+	city String 
+	stateProvince String
+}
+entity Department {
+	departmentName String required
+}
+entity Task {
+	title String 
+	description String
+}
+entity Employee {
+	firstName String 
+	lastName String 
+	email String
+	phoneNumber String
+	hireDate Instant
+	salary Long
+	commissionPct Long
+}
+entity Job {
+	jobTitle String
+	minSalary Long
+	maxSalary Long
+}
+entity JobHistory {
+	startDate Instant
+	endDate Instant
+	language Language
+}
+enum Language {
+	FRENCH ENGLISH  SPANISH
+}
+relationship OneToOne {
+	Location{country} to Country
+	Department{location} to Location
+	JobHistory{job} to Job
+	JobHistory{department} to Department
+	JobHistory{employee} to Employee
+	Country{region} to Region
+}
+relationship ManyToMany {
+	Job{task(title)} to Task{job}
+}
+relationship OneToMany {
+	Employee{job} to Job 
+	Department{employee} to	Employee
+}
+relationship ManyToOne {
+	Employee{manager} to Employee
+}
+paginate JobHistory,Employee with infinite-scroll
+paginate Job with pagination
+service all with serviceImpl except Employee,Job
+// Set an angular suffix
+angularSuffix * with App
