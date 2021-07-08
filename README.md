@@ -1,23 +1,29 @@
+# Employee Management System
 
 <img src="https://github.com/cokikip/EmployeeMS/blob/1ead07a5a01d653010f7bceccf55a899b27c7e1e/employeeSystem.png" />
-
-# Employee Management System
 
 This application was build using JHipster 7.1.0, Redis,PostgresSQL, Angular 12 and Spring boot.
 
 ## Running the application
+
 ##### Before running it git clone at
+
 ```
 git clone https://github.com/cokikip/EmployeeMS.git
 ```
+
 ##### Then install dependencies using
+
 ```
 npm intall
 ```
-##### Then run the project using 
+
+##### Then run the project using
+
 ```
 ./mvnw
 ```
+
 ```
 npm start
 ```
