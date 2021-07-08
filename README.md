@@ -3,7 +3,17 @@
 
 # Employee Management System
 
-This application was generated using JHipster 7.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.1.0](https://www.jhipster.tech/documentation-archive/v7.1.0).
+This application was build using JHipster 7.1.0, Redis,PostgresSQL, Angular 12 and Spring boot.
+
+## Running the application
+##### Before running it git clone at
+
+##### Then install dependencies using
+npm intall
+
+##### Then run the project using 
+./mvnw
+npm start
 
 ## Development
 
