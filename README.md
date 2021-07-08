@@ -7,14 +7,20 @@ This application was build using JHipster 7.1.0, Redis,PostgresSQL, Angular 12 a
 
 ## Running the application
 ##### Before running it git clone at
+```
 git clone https://github.com/cokikip/EmployeeMS.git
-
+```
 ##### Then install dependencies using
+```
 npm intall
-
+```
 ##### Then run the project using 
+```
 ./mvnw
+```
+```
 npm start
+```
 
 ## Development
 
