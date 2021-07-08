@@ -75,24 +75,6 @@ Note: There are still a few other things remaining to do for Leaflet that we won
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
-### Using Angular CLI
-
-You can also use [Angular CLI][] to generate some custom client code.
-
-For example, the following command:
-
-```
-ng generate component my-component
-```
-
-will generate few files:
-
-```
-create src/main/webapp/app/my-component/my-component.component.html
-create src/main/webapp/app/my-component/my-component.component.ts
-update src/main/webapp/app/app.module.ts
-```
-
 ## Building for production
 
 ### Packaging as jar
@@ -196,24 +178,3 @@ docker-compose -f src/main/docker/app.yml up -d
 ```
 
 For more information refer to [Using Docker and Docker-Compose][], this page also contains information on the docker-compose sub-generator (`jhipster docker-compose`), which is able to generate docker configurations for one or several JHipster applications.
-
-## Continuous Integration (optional)
-
-To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`), this will let you generate configuration files for a number of Continuous Integration systems. Consult the [Setting up Continuous Integration][] page for more information.
-
-[jhipster homepage and latest documentation]: https://www.jhipster.tech
-[jhipster 7.1.0 archive]: https://www.jhipster.tech/documentation-archive/v7.1.0
-[using jhipster in development]: https://www.jhipster.tech/documentation-archive/v7.1.0/development/
-[using docker and docker-compose]: https://www.jhipster.tech/documentation-archive/v7.1.0/docker-compose
-[using jhipster in production]: https://www.jhipster.tech/documentation-archive/v7.1.0/production/
-[running tests page]: https://www.jhipster.tech/documentation-archive/v7.1.0/running-tests/
-[code quality page]: https://www.jhipster.tech/documentation-archive/v7.1.0/code-quality/
-[setting up continuous integration]: https://www.jhipster.tech/documentation-archive/v7.1.0/setting-up-ci/
-[node.js]: https://nodejs.org/
-[webpack]: https://webpack.github.io/
-[angular cli]: https://cli.angular.io/
-[browsersync]: https://www.browsersync.io/
-[jest]: https://facebook.github.io/jest/
-[jasmine]: https://jasmine.github.io/2.0/introduction.html
-[leaflet]: https://leafletjs.com/
-[definitelytyped]: https://definitelytyped.org/
